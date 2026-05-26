@@ -440,7 +440,7 @@ Users can fix the parameters of the model. For example, `+I{0.2}` will fix the p
 [Abascal et al., 2007]: https://doi.org/10.1093/molbev/msl136
 [Adachi and Hasegawa, 1996]: https://doi.org/10.1007/BF02498640
 [Adachi et al., 2000]: https://doi.org/10.1007/s002399910038
-[Banos et al., 2024]: https://doi.org/10.1101/2024.03.29.587376
+[Banos et al., 2024]: https://doi.org/10.1093/molbev/msae174
 [Bielawski and Gold, 2002]: https://doi.org/10.1093/genetics/161.4.1589
 [Dang et al., 2010]: https://doi.org/10.1186/1471-2148-10-99
 [Dang et al., 2022]: https://doi.org/10.1093/sysbio/syac007
