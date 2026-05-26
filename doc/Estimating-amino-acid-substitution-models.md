@@ -172,7 +172,7 @@ To estimate a non-reversible model from a folder of alignments:
 Estimating linked exchangeabilities
 -----------------------------------
 
-Starting with version 2.3.5, IQ-TREE allows users to estimate linked exchangeabilities under [profile mixture models](Substitution-Models#protein-mixture-models).
+Starting with version 2.3.5, IQ-TREE allows users to estimate linked exchangeabilities under [profile mixture models](Substitution-Models#protein-mixture-models), called GTRpmix ([Banos et al., 2024]).
 
 To start with, we show an example:
 
@@ -204,7 +204,7 @@ Because these routines can be computationally expensive, two exchangeability mat
 
 If you use this routine in a publication please cite:
 
-> __H. Banos et al.__ (2024) GTRpmix: A linked general-time reversible model for profile mixture models. _BioRxiv_. <https://doi.org/10.1101/2024.03.29.587376>
+> __H. Banos et al.__ (2024) GTRpmix: A linked general time-reversible model for profile mixture models. _Molecular Biology and Evolution_ 41:msae174. <https://doi.org/10.1093/molbev/msae174>
 
 
 [Dang et al., 2022]: https://doi.org/10.1093/sysbio/syac007
@@ -213,3 +213,4 @@ If you use this routine in a publication please cite:
 [El-Gebali et al., 2018]: https://doi.org/10.1093/nar/gky995
 [Duchêne et al., 2019]: https://doi.org/10.1093/molbev/msz291
 [Ran et al., 2018]: https://doi.org/10.1098/rspb.2018.1012
+[Banos et al., 2024]: https://doi.org/10.1093/molbev/msae174
