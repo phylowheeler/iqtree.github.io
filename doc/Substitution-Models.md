@@ -197,9 +197,16 @@ IQ-TREE supports all common empirical amino-acid exchange rate matrices (alphabe
 | Q.pfam   | nuclear | General Q matrix ([Minh et al., 2021]) estimated from Pfam version 31 database ([El-Gebali et al., 2018]). | 
 | Q.plant  | nuclear | Q matrix ([Minh et al., 2021]) estimated for plants ([Ran et al., 2018]). | 
 | Q.yeast  | nuclear | Q matrix ([Minh et al., 2021]) estimated for yeasts ([Shen et al., 2018]). | 
+| QC.mammal | nuclear | Q matrix ([Minh et al., 2021]) estimated on cleaned alignments ([Wheeler, et al. 2026]) for mammals from OrthoMaM database version 12 ([Allio, et al. 2024]) . | 
+| QC.pfam   | nuclear | Q matrix ([Minh et al., 2021]) estimated on cleaned alignments ([Wheeler, et al. 2026]) from Pfam version 31 database ([El-Gebali et al., 2018]). | 
+| QC.pfam   | nuclear | Q matrix ([Minh et al., 2021]) estimated on cleaned alignments ([Wheeler, et al. 2026]) for archaeal from the HAMAP database ([Lima, et al. 2009]). | 
+| QC.pfam   | nuclear | Q matrix ([Minh et al., 2021]) estimated on cleaned alignments ([Wheeler, et al. 2026]) for bacteria from the HAMAP database ([Lima, et al. 2009]). | 
 | rtREV    | viral | Retrovirus ([Dimmic et al., 2002]). |
 | VT       | nuclear | General 'Variable Time' matrix ([Mueller and Vingron, 2000]). |
 | WAG      | nuclear | General matrix ([Whelan and Goldman, 2001]). |
+
+>**TIP**: QC models should always be used in conjunction with the +F option to use emperical amino acid frequencies 
+{: .tip}
 
 ### Protein mixture models
 
