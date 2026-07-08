@@ -18,7 +18,7 @@ IQ-TREE: http://www.iqtree.org/
 
 # Example Usage
 
-The first step is to generate an ensemble of alignments using the "stratified" option in Muscle5. By default, this creates a set of 16 variant alignments, all output in a single ensemble fasta file.
+The first step is to generate an ensemble of alignments using the "stratified" option in Muscle5. This creates a set of 16 variant alignments, all output in a single ensemble fasta file, instead of a single alignment.
 
 ```
 muscle -align sequences.fasta -stratified -output ensemble.efa
