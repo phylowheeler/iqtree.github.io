@@ -527,7 +527,7 @@ Trimming alignments
 --------------------------------------
 <div class="hline"></div>
 
-Phylogenetic analysis relies on well aligned sequences. One initial filter can be to remove non-homologous sequences prior to alignment using Prequal ([Whelan et al., 2018]). 
+Aligned sites that do not share a common ancestry do not provide useful information for phylogenetic inference. One initial filter is to remove non-homologous sequences prior to alignment using Prequal ([Whelan et al., 2018]). 
 
 When filtering errors from alignments, removing whole alignment columns can risk losing information about closely related species. Three programs that avoid this are Divvier ([Ali et al., 2019]), Taper ([Zhang et al., 2021]), and CLOAK ([Wheeler et al., 2026]). All attempt to remove poorly aligned characters from protein alignments, with Divvier being the strictest, and CLOAK being the gentlest filter among those three options ([Wheeler et al., 2026]). 
 
