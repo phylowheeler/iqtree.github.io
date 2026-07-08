@@ -531,9 +531,8 @@ Aligned sites that do not share a common ancestry do not provide useful informat
 
 Even when sequences as a whole are homologous, there can still be sites that are not homologous for all sequences in the alignment. Removing whole alignment columns can risk losing information about closely related species. Three programs that convert predicted misaligned characters to dashes without removing whole columns are Divvier ([Ali et al., 2019]), Taper ([Zhang et al., 2021]), and CLOAK ([Wheeler et al., 2026]). There is a tradeoff between precision and recall in alignmet filtering, with stricter filters removing more errors, but also removing more correctly aligned characters. These three programs performed best out of the tested alignment filtering methods on a precision recall curve, with Divvier being the strictest filter and CLOAK being the gentlest filter ([Wheeler et al., 2026]). 
 
-IQ-Tree contains a method for triming sites directly during tree search called **trimmed log-likelihood**. 
-
-The trimed log-likelihood method works by dynamically excluding a user-defined proportion of sites
+IQ-Tree contains a method for trimming sites directly during tree search called **trimmed log-likelihood**. 
+The trimmed log-likelihood method works by dynamically excluding a user-defined proportion of sites
 with the lowest log-likelihood values during the tree search. As the search
 progresses,  the likelihood of each site is recalculated at each step using
 current tree and model parameters.  This ensures that site removal is always
