@@ -530,7 +530,10 @@ Trimming alignment sites by likelihood
 Phylogenetic inference can be highly sensitive to fast-evolving, saturated or
 erroneous sites in a sequence alignment. Many studies used Gblocks 
 ([Castresana, 2000]) or trimAl ([Capella-Gutiérrez et al., 2009])
-to trim alignment sites prior to phylogenetic reconstruction.
+to trim alignment sites prior to phylogenetic reconstruction. 
+
+Many newer methods focus on removing alignment erros without removing whole alignment columns to avoid excessive information loss. Prequal removes non-homologous sequences prior to sequence alignment ([Whelan et al., 2018]). Divvier ([Ali et al., 2019]), Taper ([Zhang et al., 2021]), and CLOAK ([Wheeler et al., 2026]) all attempt to remove poorly aligned characters from protein alignments, with Divvier being the strictest, and CLOAK being the gentlest filter among those three options ([Wheeler et al., 2026]).
+
 Here, we present an alternative approach called  **trimmed log-likelihood**, a 
 robust phylogenetics method, that automatically detects and trims such sites 
 during tree search directly.
@@ -595,4 +598,7 @@ See [Command Reference](Command-Reference) for a complete list of all options av
 [Strimmer and Rambaut, 2002]: https://doi.org/10.1098/rspb.2001.1862
 [Mayrose et al., 2004]: https://doi.org/10.1093/molbev/msh194
 [Yang, 1995]: http://www.genetics.org/content/139/2/993.abstract
-
+[Whelan et al., 2018]: https://doi.org/10.1093/bioinformatics/bty448
+[Ali et al., 2019]: https://doi.org/10.1093/molbev/msz142
+[Zhang et al., 2021]: https://doi.org/10.1111/2041-210X.13696
+[Wheeler et al., 2026]: https://doi.org/10.64898/2025.12.01.691663
