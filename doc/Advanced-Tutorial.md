@@ -528,11 +528,7 @@ Trimming alignment sites by likelihood
 <div class="hline"></div>
 
 Phylogenetic inference can be highly sensitive to fast-evolving, saturated or
-erroneous sites in a sequence alignment. Many studies used Gblocks 
-([Castresana, 2000]) or trimAl ([Capella-Gutiérrez et al., 2009])
-to trim alignment sites prior to phylogenetic reconstruction. 
-
-Many newer methods focus on removing alignment erros without removing whole alignment columns to avoid excessive information loss. Prequal removes non-homologous sequences prior to sequence alignment ([Whelan et al., 2018]). Divvier ([Ali et al., 2019]), Taper ([Zhang et al., 2021]), and CLOAK ([Wheeler et al., 2026]) all attempt to remove poorly aligned characters from protein alignments, with Divvier being the strictest, and CLOAK being the gentlest filter among those three options ([Wheeler et al., 2026]).
+erroneous sites in a sequence alignment. Many newer methods focus on removing alignment erros without removing whole alignment columns to avoid losing information about closely related species. Prequal removes non-homologous sequences prior to sequence alignment ([Whelan et al., 2018]). Divvier ([Ali et al., 2019]), Taper ([Zhang et al., 2021]), and CLOAK ([Wheeler et al., 2026]) all attempt to remove poorly aligned characters from protein alignments, with Divvier being the strictest, and CLOAK being the gentlest filter among those three options ([Wheeler et al., 2026]).
 
 Here, we present an alternative approach called  **trimmed log-likelihood**, a 
 robust phylogenetics method, that automatically detects and trims such sites 
@@ -583,8 +579,6 @@ Where to go from here?
 
 See [Command Reference](Command-Reference) for a complete list of all options available in IQ-TREE.
 
-[Capella-Gutiérrez et al., 2009]: https://doi.org/10.1093/bioinformatics/btp348
-[Castresana, 2000]: https://doi.org/10.1093/oxfordjournals.molbev.a026334
 [Gadagkar et al., 2005]: https://doi.org/10.1002/jez.b.21026
 [Kishino et al., 1990]: https://doi.org/10.1007/BF02109483
 [Kishino and Hasegawa, 1989]: https://doi.org/10.1007/BF02100115
