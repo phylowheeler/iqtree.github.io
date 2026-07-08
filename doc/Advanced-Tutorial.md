@@ -529,7 +529,7 @@ Trimming alignments
 
 Aligned sites that do not share a common ancestry do not provide useful information for phylogenetic inference. Prequal is designed to remove non-homologous sequences prior to alignment ([Whelan et al., 2018]). 
 
-Even when sequences as a whole are homologous, there can still be sites that are not homologous for all species in the alignment. Care is required when filtering these sites, since removing whole alignment columns can risk losing information about closely related species. Three programs that avoid this are Divvier ([Ali et al., 2019]), Taper ([Zhang et al., 2021]), and CLOAK ([Wheeler et al., 2026]). All attempt to remove poorly aligned characters from protein alignments, with Divvier being the strictest, and CLOAK being the gentlest filter among those three options ([Wheeler et al., 2026]). 
+Even when sequences as a whole are homologous, there can still be sites that are not homologous for all sequences in the alignment. Removing whole alignment columns can risk losing information about closely related species. Three programs that convert predicted misaligned characters to dashes without removing whole columns are Divvier ([Ali et al., 2019]), Taper ([Zhang et al., 2021]), and CLOAK ([Wheeler et al., 2026]). All attempt to remove poorly aligned characters from protein alignments, with Divvier being the strictest, and CLOAK being the gentlest filter among those three options ([Wheeler et al., 2026]). 
 
 Here, we present an alternative approach called  **trimmed log-likelihood**, a 
 robust phylogenetics method, that automatically detects and trims sites that are fast-evolving, saturated, or erroneous
