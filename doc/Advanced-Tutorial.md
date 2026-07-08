@@ -523,15 +523,15 @@ This will print an output file `example.phy.mlrate` that looks like:
 	10      0.00001
 
 
-Trimming alignment sites by likelihood
+Trimming alignments
 --------------------------------------
 <div class="hline"></div>
+Phylogenetic analysis relies on well aligned sequences. One initial filter can be to remove removes non-homologous sequences prior to alignment using Prequal ([Whelan et al., 2018]). 
 
-Phylogenetic inference can be highly sensitive to fast-evolving, saturated or
-erroneous sites in a sequence alignment. Many newer methods focus on removing alignment erros without removing whole alignment columns to avoid losing information about closely related species. Prequal removes non-homologous sequences prior to sequence alignment ([Whelan et al., 2018]). Divvier ([Ali et al., 2019]), Taper ([Zhang et al., 2021]), and CLOAK ([Wheeler et al., 2026]) all attempt to remove poorly aligned characters from protein alignments, with Divvier being the strictest, and CLOAK being the gentlest filter among those three options ([Wheeler et al., 2026]).
+When filtering errors from alignments, many newer methods focus on removing alignment errors without removing whole alignment columns to avoid losing information about closely related species. Divvier ([Ali et al., 2019]), Taper ([Zhang et al., 2021]), and CLOAK ([Wheeler et al., 2026]) all attempt to remove poorly aligned characters from protein alignments, with Divvier being the strictest, and CLOAK being the gentlest filter among those three options ([Wheeler et al., 2026]).
 
 Here, we present an alternative approach called  **trimmed log-likelihood**, a 
-robust phylogenetics method, that automatically detects and trims such sites 
+robust phylogenetics method, that automatically detects and trims sites that are fast-evolving, saturated, or erroneous
 during tree search directly.
 
 The trimed log-likelihood method works by dynamically excluding a user-defined proportion of sites
