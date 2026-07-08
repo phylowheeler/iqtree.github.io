@@ -199,13 +199,13 @@ IQ-TREE supports all common empirical amino-acid exchange rate matrices (alphabe
 | Q.yeast  | nuclear | Q matrix ([Minh et al., 2021]) estimated for yeasts ([Shen et al., 2018]). | 
 | QC.mammal | nuclear | Q matrix ([Minh et al., 2021]) estimated on cleaned alignments ([Wheeler, et al. 2026]) for mammals from OrthoMaM database version 12 ([Allio, et al. 2024]) . | 
 | QC.pfam   | nuclear | Q matrix ([Minh et al., 2021]) estimated on cleaned alignments ([Wheeler, et al. 2026]) from Pfam version 31 database ([El-Gebali et al., 2018]). | 
-| QC.pfam   | nuclear | Q matrix ([Minh et al., 2021]) estimated on cleaned alignments ([Wheeler, et al. 2026]) for archaeal from the HAMAP database ([Lima, et al. 2009]). | 
-| QC.pfam   | nuclear | Q matrix ([Minh et al., 2021]) estimated on cleaned alignments ([Wheeler, et al. 2026]) for bacteria from the HAMAP database ([Lima, et al. 2009]). | 
+| QC.archaea  | nuclear | Q matrix ([Minh et al., 2021]) estimated on cleaned alignments ([Wheeler, et al. 2026]) for archaeal from the HAMAP database ([Lima, et al. 2009]). | 
+| QC.bacteria   | nuclear | Q matrix ([Minh et al., 2021]) estimated on cleaned alignments ([Wheeler, et al. 2026]) for bacteria from the HAMAP database ([Lima, et al. 2009]). | 
 | rtREV    | viral | Retrovirus ([Dimmic et al., 2002]). |
 | VT       | nuclear | General 'Variable Time' matrix ([Mueller and Vingron, 2000]). |
 | WAG      | nuclear | General matrix ([Whelan and Goldman, 2001]). |
 
->**TIP**: QC models should always be used in conjunction with the +F option to use emperical amino acid frequencies 
+>**TIP**: Cleaned "QC" substitution models have been shown to improve inference of mammalian gene trees relative to substitution models trained on unfiltered data ([Wheeler, et al. 2026]). Nevertheless, ModelFinder is more likely to choose unfiltered Q substitution models, which tend to be better fit for gene alignments that also have no cleaning or gentle cleaning. Therefore, an alternative to using ModelFinder would be to select a QC model a priori. QC models should always be used in conjunction with the +F option to use emperical amino acid frequencies. 
 {: .tip}
 
 ### Protein mixture models
@@ -508,3 +508,6 @@ Users can fix the parameters of the model. For example, `+I{0.2}` will fix the p
 [davidcerny/GEOS26100-Fall2022]: https://github.com/davidcerny/GEOS26100-Fall2022
 [Černý & Simonoff (2023)]: https://doi.org/10.1038/s41598-023-35784-3
 [Harada et al., 2026]: https://doi.org/10.64898/2026.06.18.729217
+[Wheeler, et al. 2026]: https://doi.org/10.64898/2025.12.01.691663
+[Allio, et al. 2024]: https://doi.org/10.1093/nar/gkad834
+[Lima, et al. 2009]: https://doi.org/10.1093/nar/gkn661
