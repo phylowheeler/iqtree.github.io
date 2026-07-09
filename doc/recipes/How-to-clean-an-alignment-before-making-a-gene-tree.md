@@ -10,6 +10,8 @@ docid: 100
 
 This recipe explains how to filter out errors from a single gene multiple sequence alignment, prior to gene tree inference, using the "CLOAK" function in Muscle5. 
 
+CLOAK filters based on consensus among an ensemble of alternative alignments. First, an alignment ensemble is inferred by varying the initial guide tree and HMM parameters used for multiple sequence alignment. If characters are found to be homologous across all alignemnts in the ensemble, they are retained in the filtered alignment. Otherwise they are replaced by dashes. If a whole alignment column does not have consistent homology, but subsets of the column do, the column is split into 2 or columns that are both retained in the filtered alignment. This makes the program act as a gentle filter, since it removes a singificant number of non-homologous characters without losing many informative homologies. CLOAK is recommended for filtering single gene alignments, which are often sensitive to any loss of data from their limited number of informative sites ([Wheeler, et al. 2026]).
+
 # What you need
 
 Muscle5: https://www.drive5.com/muscle/
@@ -36,3 +38,5 @@ Arguments:
                         for that column to be retained in the output.
                         Default value of 2 if not specified
 - -output <filename>  : Name of the file where the filtered MSA will be written. By default this will be {input_file_name}.cloak.fa
+
+[Wheeler, et al. 2026]: https://doi.org/10.64898/2025.12.01.691663
