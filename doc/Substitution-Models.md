@@ -435,6 +435,9 @@ IQ-TREE supports all common rate heterogeneity across sites models:
 | +R       | FreeRate model ([Yang, 1995]; [Soubrier et al., 2012]) that generalizes the `+G` model by relaxing the assumption of Gamma-distributed rates. The number of categories can be specified with e.g. `+R6` (default 4 categories if not specified). Gamma models produce artifacts, especially for large datasets ([Ferretti et al., 2026]). FreeRate models are therefore recommended. |
 | +I+R     | invariable site plus FreeRate model. |
 
+>**TIP**: TIP: ModelFinder (-m MFP option) tests the FreeRate model, whereas the outdated (-m TEST) does not. To test only the FreeRate model, use (-mrate I,R,I+R).
+{: .tip}
+
 Users can fix the parameters of the model. For example, `+I{0.2}` will fix the proportion of invariable sites (pinvar) to 0.2; `+G{0.9}` will fix the Gamma shape parameter (alpha) to 0.9; `+I{0.2}+G{0.9}` will fix both pinvar and alpha. To fix the FreeRate model parameters, use the syntax `+Rk{w1,r1,...,wk,rk}` (replacing `k` with the number of categories). Here, `w1, ..., wk` are the weights and `r1, ..., rk` the rates for each category. 
 
 >**NOTE**: For the `+G` model IQ-TREE implements the _mean_ approximation approach ([Yang, 1994]). The same is done in RAxML and PhyML. However, some programs like TREE-PUZZLE implement the _median_ approximation approach, which makes the resulting log-likelihood not comparable. IQ-TREE can change to this approach via the `-gmedian` option.
