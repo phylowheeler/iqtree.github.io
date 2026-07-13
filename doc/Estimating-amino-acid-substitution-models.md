@@ -178,6 +178,9 @@ Multiple sequence alignments often contain errors that can inflate the rates of 
 
 The filtered alignments can then be used to infer Q matrices as described above. Because the amino acid frequency parameters inferred for a QC matrix will reflect the frequencies of the filtered alignments rather than the originals, QC substitution models should always use emperical amino acid frequencies with the +F setting. Note that the +F option is not valid for nonreversible NQ matrices, which cannot be separated into symmetric exchangeability scores and amino acid frequencies. Therefore filtered alignments should not be used to train NQ models.
 
+If you use the new models trained on cleaned multiple sequence alignments (QC.pfam…), please cite:
+
+>  Andrew L. Wheeler, Chiragdeep Chatur, Peter W Goodman, Robert C Edgar, Gavin A Huttley, Joanna Masel (2026), Improved gene tree inference from removing alignment errors both from focal genes and when training substitution models. in press at Molecular Biology & Evolution. <https://doi.org/10.64898/2025.12.01.691663>
 
 Estimating linked exchangeabilities
 -----------------------------------
