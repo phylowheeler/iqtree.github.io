@@ -205,7 +205,7 @@ IQ-TREE supports all common empirical amino-acid exchange rate matrices (alphabe
 | VT       | nuclear | General 'Variable Time' matrix ([Mueller and Vingron, 2000]). |
 | WAG      | nuclear | General matrix ([Whelan and Goldman, 2001]). |
 
->**TIP**: Cleaned "QC" substitution models make mammalian single copy ortholog trees on average more similar to the mammalian species tree ([Wheeler, et al. 2026]). Nevertheless, alignment errors in the focal gene alignment will cause ModelFinder to prefer unfiltered Q to QC. If QC is desired, ModelFinder should not be used. QC models should always be used in conjunction with the +F option to use emperical amino acid frequencies. 
+>**TIP**: Cleaned "QC" substitution models make mammalian single copy ortholog trees on average more similar to the mammalian species tree ([Wheeler, et al. 2026]). Nevertheless, alignment errors in the focal gene alignment will cause ModelFinder to prefer unfiltered Q to QC. If QC is desired, ModelFinder should not be used. QC models should always be used in conjunction with the +F option to use empirical amino acid frequencies. 
 {: .tip}
 
 ### Protein mixture models
