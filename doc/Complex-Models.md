@@ -148,7 +148,11 @@ Here, we specify two mixture components and four Gamma rate categories. Effectiv
 
 ### MixtureFinder
 
-MixtureFinder is an approach to select the optimum number of classes and the substitution model in each class for a mixture model of Q matrices. Starting with version 2.3.1, MixtureFinder is available in IQ-TREE. To run MixtureFinder:
+MixtureFinder is an approach to select the optimum number of classes and the substitution model in each class for a mixture model of Q matrices. Starting with version 2.3.1, MixtureFinder is available in IQ-TREE. 
+
+>**NOTE**: Please use MixtureFinder in IQ-TREE 3, which has a much improved implementation over IQ-TREE 2.
+
+To run MixtureFinder:
 
 	iqtree -s example.phy -m MIX+MF
 	
