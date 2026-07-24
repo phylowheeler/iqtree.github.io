@@ -593,4 +593,4 @@ See [Command Reference](Command-Reference) for a complete list of all options av
 [Whelan et al., 2018]: https://doi.org/10.1093/bioinformatics/bty448
 [Ali et al., 2019]: https://doi.org/10.1093/molbev/msz142
 [Zhang et al., 2021]: https://doi.org/10.1111/2041-210X.13696
-[Wheeler et al., 2026]: https://doi.org/10.64898/2025.12.01.691663
+[Wheeler et al., 2026]: https://doi.org/10.1093/molbev/msag182
