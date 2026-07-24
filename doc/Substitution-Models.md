@@ -512,7 +512,7 @@ Users can fix the parameters of the model. For example, `+I{0.2}` will fix the p
 [davidcerny/GEOS26100-Fall2022]: https://github.com/davidcerny/GEOS26100-Fall2022
 [Černý & Simonoff (2023)]: https://doi.org/10.1038/s41598-023-35784-3
 [Harada et al., 2026]: https://doi.org/10.64898/2026.06.18.729217
-[Wheeler et al., 2026]: https://doi.org/10.64898/2025.12.01.691663
+[Wheeler et al., 2026]: https://doi.org/10.1093/molbev/msag182
 [Allio et al., 2024]: https://doi.org/10.1093/nar/gkad834
 [Lima et al., 2009]: https://doi.org/10.1093/nar/gkn661
 [Ferretti et al., 2026]: https://doi.org/10.1093/sysbio/syag037
