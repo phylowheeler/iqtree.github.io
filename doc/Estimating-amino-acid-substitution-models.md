@@ -251,5 +251,5 @@ If you use the GTRspmix model, please cite the following paper:
 [Ran et al., 2018]: https://doi.org/10.1098/rspb.2018.1012
 [Banos et al., 2024]: https://doi.org/10.1093/molbev/msae174
 [Harada et al., 2026]: https://doi.org/10.64898/2026.06.18.729217
-[Wheeler et al., 2026]: https://doi.org/10.64898/2025.12.01.691663
+[Wheeler et al., 2026]: https://doi.org/10.1093/molbev/msag182
 [Ali et al., 2019]: https://doi.org/10.1093/molbev/msz142
