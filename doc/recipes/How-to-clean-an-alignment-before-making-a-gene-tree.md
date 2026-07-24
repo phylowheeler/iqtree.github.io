@@ -39,4 +39,4 @@ Arguments:
                         Default value of 2 if not specified
 - -output <filename>  : Name of the file where the filtered MSA will be written. By default this will be {input_file_name}.cloak.fa
 
-[Wheeler, et al. 2026]: https://doi.org/10.64898/2025.12.01.691663
+[Wheeler, et al. 2026]: https://doi.org/10.1093/molbev/msag182
